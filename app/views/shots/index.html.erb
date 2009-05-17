@@ -1,0 +1,15 @@
+<h1>Welcome to C4C's Video Site!</h1>
+
+
+<b>You currently have 3 options:</b><br/><br/>
+
+<%= link_to 'Upload footage information', new_shot_path %><br/>
+Upload new footage information into the database.<br/>
+<br/>
+<%= link_to 'Display all videos in database', :controller => "shots", :action => "displayall" %><br/>
+Display all the existing video footage data in the database. This option also allows editing and deleting footage information.<br/>
+<br/>
+<%= link_to 'Find a specific footage', :action => "search" %><br/>
+Search for a specific footage using available information on footage.
+<br />
+

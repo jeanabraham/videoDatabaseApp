@@ -1,0 +1,16 @@
+<h1>Editing actor</h1>
+
+<% form_for(@actor) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :actor_name %><br />
+    <%= f.text_field :actor_name %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @actor %> |
+<%= link_to 'Back', actors_path %>

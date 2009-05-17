@@ -1,0 +1,25 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  tape_id: MyString
+  shot_in: 2009-05-13 11:38:12
+  shot_out: 2009-05-13 11:38:12
+  actors: MyText
+  campus: MyString
+  location: MyString
+  province: MyString
+  country: MyString
+  topic: MyString
+  keywords: MyText
+
+two:
+  tape_id: MyString
+  shot_in: 2009-05-13 11:38:12
+  shot_out: 2009-05-13 11:38:12
+  actors: MyText
+  campus: MyString
+  location: MyString
+  province: MyString
+  country: MyString
+  topic: MyString
+  keywords: MyText

@@ -1,0 +1,16 @@
+body {
+	background-color:#1F1F1F;
+	background-image:url(../images/bg_img.png);
+	background-repeat:repeat-x;
+	font-family:"Lucida Grande","Verdana",sans-serif;
+	font-size:13px;
+	margin:0;
+	padding:0;
+}
+
+#page-block {
+	margin:0 auto;
+	width:800px;
+	background-color:#FFF;
+	padding:0.2cm;
+}

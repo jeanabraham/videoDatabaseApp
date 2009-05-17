@@ -1,0 +1,13 @@
+<h1>Search for shot</h1>
+
+
+
+<%= form_tag :action => "results"-%>
+
+  <%= label_tag 'Tape ID ' %> 
+  <%= text_field_tag :tape_id %> 
+  
+<%= submit_tag 'Search' %>
+
+<br />
+<%= link_to 'Back', :controller => "shots", :action => "index" %>

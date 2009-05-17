@@ -1,0 +1,9 @@
+<h1>Campus for Christ video database</h1>
+
+
+
+<%= link_to 'New shot', new_shot_path %><br/>
+<%= link_to 'Display all shots in database', :controller => "shots", :action => "displayall" %><br/>
+<%= link_to 'Search for shot', :action => "search" %>
+<br />
+

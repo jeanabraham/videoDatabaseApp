@@ -1,0 +1,27 @@
+<h1>Search for footage</h1>
+
+
+<% form_remote_tag :url => {:action => "results"} do%>
+
+	<%= label_tag 'Tape ID ' %> 
+	<%= text_field_tag :tape_id %> 
+  
+	<%= submit_tag 'Search' %>
+
+<% end %>
+
+<!--
+<%= form_tag :action => "search"-%>
+
+  <%= label_tag 'Tape ID ' %> 
+  <%= text_field_tag :tape_id %> 
+  
+<%= submit_tag 'Search' %>
+-->
+
+<div id="results">
+	<%= render(:partial => "results" , :object => @shots) %>
+</div>
+
+<br />
+<%= link_to 'Back', :controller => "shots", :action => "index" %>

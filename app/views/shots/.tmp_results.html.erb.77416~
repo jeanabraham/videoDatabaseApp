@@ -1,0 +1,38 @@
+<h1>Results for : <%= @tape_id %></h1>
+
+<%if @shots.empty?%>
+	Unable to find matching results
+<%else%>
+	<table>
+	  <tr>
+	    <th>Tape</th>
+	    <th>Shot in</th>
+	    <th>Shot out</th>
+	    <th>Actors</th>
+	    <th>Campus</th>
+	    <th>Location</th>
+	    <th>Province</th>
+	    <th>Country</th>
+	    <th>Topic</th>
+	    <th>Keywords</th>
+	  </tr>
+	
+	<% @shots.each do |shot| %>
+	  <tr>
+	    <td><%=h shot.tape_id %></td>
+	    <td><%=h shot.shot_in %></td>
+	    <td><%=h shot.shot_out %></td>
+	    <td><%=h shot.actors %></td>
+	    <td><%=h shot.campus %></td>
+	    <td><%=h shot.location %></td>
+	    <td><%=h shot.province %></td>
+	    <td><%=h shot.country %></td>
+	    <td><%=h shot.topic %></td>
+	    <td><%=h shot.keywords %></td>
+	    <td><%= link_to 'Show', shot %></td>
+	    <td><%= link_to 'Edit', edit_shot_path(shot) %></td>
+	    <td><%= link_to 'Destroy', shot, :confirm => 'Are you sure?', :method => :delete %></td>
+	  </tr>
+	<% end %>
+<% end %>
+</table>

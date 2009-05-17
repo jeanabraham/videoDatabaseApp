@@ -1,0 +1,11 @@
+<%if !@shots.nil? %>
+	<%if @shots.empty?%>
+	    <br/><br/><br/>
+		Unable to find matching results
+	<%else%>
+	<br/><br/><br/>
+	
+	<b>Results for : <%= @tape_id %></b>
+		<%= render(:partial => "display" , :object => @shots) %>
+	<% end %>
+<% end %>
