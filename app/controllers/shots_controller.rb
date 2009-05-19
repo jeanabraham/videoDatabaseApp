@@ -37,6 +37,22 @@ class ShotsController < ApplicationController
     end
   end
   
+  def rss
+    # Get the 10 most recent photos
+    @shots = Shot.find :all, :limit => 5
+    # Title for the RSS feed
+    @feed_title = "5 most recent videos"
+    # Get the absolute URL which produces the feed
+    @feed_url = "http://" + request.host_with_port + request.request_uri
+    # Description of the feed as a whole
+    @feed_description = "5 most recent videos"
+    # Set the content type to the standard one for RSS
+    response.headers['Content-Type'] = 'application/rss+xml'
+    # Render the feed using an RXML template
+    render :action => 'rss', :layout => false
+  end
+
+  
   # GET /shots/1
   # GET /shots/1.xml
   def show

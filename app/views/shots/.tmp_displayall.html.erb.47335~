@@ -1,0 +1,7 @@
+<h1>Listing shots</h1>
+
+<%= render(:partial => "display") %>
+
+<br />
+
+<%= link_to 'Back', :controller => 'shots', :action => 'index' %>

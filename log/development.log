@@ -8841,3 +8841,461 @@ Rendering shots/displayall
   [4;35;1mShot Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `shots`[0m
 Rendered shots/_display (16.8ms)
 Completed in 27ms (View: 18, DB: 1) | 200 OK [http://0.0.0.0/shots/displayall]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ShotsController#index (for 127.0.0.1 at 2009-05-16 21:26:15) [GET]
+Rendering template within layouts/shots
+Rendering shots/index
+Completed in 6ms (View: 3, DB: 0) | 200 OK [http://0.0.0.0/v/shots]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-19 10:09:13) [GET]
+
+ActionController::RoutingError (No route matches "/shot" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ShotsController#index (for 127.0.0.1 at 2009-05-19 10:09:15) [GET]
+Rendering template within layouts/shots
+Rendering shots/index
+Completed in 66ms (View: 62, DB: 0) | 200 OK [http://0.0.0.0/shots]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ShotsController#new (for 127.0.0.1 at 2009-05-19 10:09:21) [GET]
+  [4;36;1mShot Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `shots`[0m
+  [4;35;1mUniversity Load (0.3ms)[0m   [0mSELECT * FROM `universities` [0m
+Rendering template within layouts/shots
+Rendering shots/new
+  [4;36;1mUniversity Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `universities`[0m
+Completed in 314ms (View: 244, DB: 2) | 200 OK [http://0.0.0.0/v/shots/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ShotsController#displayall (for 127.0.0.1 at 2009-05-19 10:09:52) [GET]
+  [4;35;1mShot Load (0.4ms)[0m   [0mSELECT * FROM `shots` [0m
+Rendering template within layouts/shots
+Rendering shots/displayall
+  [4;36;1mShot Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `shots`[0m
+Rendered shots/_display (26.2ms)
+Completed in 652ms (View: 643, DB: 2) | 200 OK [http://0.0.0.0/shots/displayall]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ShotsController#index (for 127.0.0.1 at 2009-05-19 12:00:59) [GET]
+Rendering template within layouts/shots
+Rendering shots/index
+Completed in 20ms (View: 17, DB: 0) | 200 OK [http://0.0.0.0/shots]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ShotsController#search (for 127.0.0.1 at 2009-05-19 12:01:32) [GET]
+Rendering template within layouts/shots
+Rendering shots/search
+Rendered shots/_results (1.2ms)
+Completed in 17ms (View: 14, DB: 0) | 200 OK [http://0.0.0.0/shots/search]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ShotsController#displayall (for 127.0.0.1 at 2009-05-19 12:01:45) [GET]
+  [4;36;1mShot Load (0.3ms)[0m   [0;1mSELECT * FROM `shots` [0m
+Rendering template within layouts/shots
+Rendering shots/displayall
+  [4;35;1mShot Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `shots`[0m
+Rendered shots/_display (107.3ms)
+Completed in 129ms (View: 117, DB: 2) | 200 OK [http://0.0.0.0/shots/displayall]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ShotsController#results (for 127.0.0.1 at 2009-05-19 12:01:51) [POST]
+  Parameters: {"commit"=>"Search", "authenticity_token"=>"ML5RxE341plrOi884tF4qpPqbJdPfbQbAKFhkcsbnl0=", "tape_id"=>"tapex"}
+  [4;36;1mShot Load (0.4ms)[0m   [0;1mSELECT * FROM `shots` WHERE (`shots`.`tape_id` = 'tapex') [0m
+Rendering shots/results
+  [4;35;1mShot Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `shots`[0m
+Rendered shots/_display (6.6ms)
+Rendered shots/_results (7.0ms)
+Completed in 28ms (View: 11, DB: 2) | 200 OK [http://0.0.0.0/shots/results]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ShotsController#show (for 127.0.0.1 at 2009-05-19 12:01:55) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mShot Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `shots`[0m
+  [4;35;1mShot Load (0.3ms)[0m   [0mSELECT * FROM `shots` WHERE (`shots`.`id` = 1) [0m
+Rendering template within layouts/shots
+Rendering shots/show
+Completed in 22ms (View: 12, DB: 2) | 200 OK [http://0.0.0.0/v/shots/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ShotsController#index (for 127.0.0.1 at 2009-05-19 12:02:46) [GET]
+Rendering template within layouts/shots
+Rendering shots/index
+Completed in 6ms (View: 3, DB: 0) | 200 OK [http://0.0.0.0/v/shots]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ShotsController#new (for 127.0.0.1 at 2009-05-19 12:02:48) [GET]
+  [4;36;1mShot Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `shots`[0m
+  [4;35;1mUniversity Load (0.1ms)[0m   [0mSELECT * FROM `universities` [0m
+Rendering template within layouts/shots
+Rendering shots/new
+  [4;36;1mUniversity Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `universities`[0m
+Completed in 43ms (View: 30, DB: 2) | 200 OK [http://0.0.0.0/v/shots/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ShotsController#create (for 127.0.0.1 at 2009-05-19 12:03:03) [POST]
+  Parameters: {"commit"=>"Create", "authenticity_token"=>"ML5RxE341plrOi884tF4qpPqbJdPfbQbAKFhkcsbnl0=", "shot"=>{"shot_out(1i)"=>"2009", "actors"=>"ss", "shot_out(2i)"=>"5", "shot_in(1i)"=>"2009", "shot_out(3i)"=>"19", "shot_in(2i)"=>"5", "shot_out(4i)"=>"16", "shot_in(3i)"=>"19", "topic"=>"aa", "country"=>"aa", "shot_out(5i)"=>"02", "shot_in(4i)"=>"16", "shot_in(5i)"=>"02", "tape_id"=>"aa", "province"=>"aa", "campus"=>"University of Waterloo", "keywords"=>"aa", "location"=>"aa"}}
+  [4;35;1mShot Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `shots`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mShot Create (0.4ms)[0m   [0mINSERT INTO `shots` (`actors`, `updated_at`, `shot_in`, `country`, `topic`, `tape_id`, `shot_out`, `campus`, `province`, `location`, `keywords`, `created_at`) VALUES('ss', '2009-05-19 16:03:03', '2009-05-19 16:02:00', 'aa', 'aa', 'aa', '2009-05-19 16:02:00', 'University of Waterloo', 'aa', 'aa', 'aa', '2009-05-19 16:03:03')[0m
+  [4;36;1mSQL (3.8ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://0.0.0.0:3000/v/shots/10
+Completed in 37ms (DB: 6) | 302 Found [http://0.0.0.0/v/shots]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ShotsController#show (for 127.0.0.1 at 2009-05-19 12:03:03) [GET]
+  Parameters: {"id"=>"10"}
+  [4;35;1mShot Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `shots`[0m
+  [4;36;1mShot Load (0.3ms)[0m   [0;1mSELECT * FROM `shots` WHERE (`shots`.`id` = 10) [0m
+Rendering template within layouts/shots
+Rendering shots/show
+Completed in 17ms (View: 6, DB: 2) | 200 OK [http://0.0.0.0/v/shots/10]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ShotsController#index (for 127.0.0.1 at 2009-05-19 12:03:09) [GET]
+Rendering template within layouts/shots
+Rendering shots/index
+Completed in 6ms (View: 3, DB: 0) | 200 OK [http://0.0.0.0/v/shots]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ShotsController#displayall (for 127.0.0.1 at 2009-05-19 12:03:12) [GET]
+  [4;35;1mShot Load (0.4ms)[0m   [0mSELECT * FROM `shots` [0m
+Rendering template within layouts/shots
+Rendering shots/displayall
+  [4;36;1mShot Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `shots`[0m
+Rendered shots/_display (17.4ms)
+Completed in 29ms (View: 19, DB: 1) | 200 OK [http://0.0.0.0/shots/displayall]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ShotsController#edit (for 127.0.0.1 at 2009-05-19 12:03:18) [GET]
+  Parameters: {"id"=>"10"}
+  [4;35;1mShot Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `shots`[0m
+  [4;36;1mShot Load (0.1ms)[0m   [0;1mSELECT * FROM `shots` WHERE (`shots`.`id` = 10) [0m
+Rendering template within layouts/shots
+Rendering shots/edit
+Completed in 38ms (View: 29, DB: 1) | 200 OK [http://0.0.0.0/v/shots/10/edit]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ShotsController#update (for 127.0.0.1 at 2009-05-19 12:03:24) [PUT]
+  Parameters: {"commit"=>"Update", "authenticity_token"=>"ML5RxE341plrOi884tF4qpPqbJdPfbQbAKFhkcsbnl0=", "shot"=>{"shot_out(1i)"=>"2009", "actors"=>"ss", "shot_out(2i)"=>"5", "shot_in(1i)"=>"2009", "shot_out(3i)"=>"19", "shot_in(2i)"=>"5", "shot_out(4i)"=>"16", "shot_in(3i)"=>"19", "topic"=>"tyrtyrt", "country"=>"aa", "shot_out(5i)"=>"02", "shot_in(4i)"=>"16", "shot_in(5i)"=>"02", "tape_id"=>"aa", "province"=>"aa", "campus"=>"University of Waterloo", "keywords"=>"aa", "location"=>"aa"}, "id"=>"10"}
+  [4;35;1mShot Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `shots`[0m
+  [4;36;1mShot Load (0.1ms)[0m   [0;1mSELECT * FROM `shots` WHERE (`shots`.`id` = 10) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mShot Update (0.4ms)[0m   [0;1mUPDATE `shots` SET `topic` = 'tyrtyrt', `updated_at` = '2009-05-19 16:03:24' WHERE `id` = 10[0m
+  [4;35;1mSQL (2.9ms)[0m   [0mCOMMIT[0m
+Redirected to http://0.0.0.0:3000/v/shots/10
+Completed in 21ms (DB: 5) | 302 Found [http://0.0.0.0/v/shots/10]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ShotsController#show (for 127.0.0.1 at 2009-05-19 12:03:24) [GET]
+  Parameters: {"id"=>"10"}
+  [4;36;1mShot Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `shots`[0m
+  [4;35;1mShot Load (0.3ms)[0m   [0mSELECT * FROM `shots` WHERE (`shots`.`id` = 10) [0m
+Rendering template within layouts/shots
+Rendering shots/show
+Completed in 66ms (View: 57, DB: 1) | 200 OK [http://0.0.0.0/v/shots/10]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ShotsController#index (for 127.0.0.1 at 2009-05-19 12:03:26) [GET]
+Rendering template within layouts/shots
+Rendering shots/index
+Completed in 7ms (View: 3, DB: 0) | 200 OK [http://0.0.0.0/v/shots]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ShotsController#displayall (for 127.0.0.1 at 2009-05-19 12:03:27) [GET]
+  [4;36;1mShot Load (0.4ms)[0m   [0;1mSELECT * FROM `shots` [0m
+Rendering template within layouts/shots
+Rendering shots/displayall
+  [4;35;1mShot Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `shots`[0m
+Rendered shots/_display (18.5ms)
+Completed in 29ms (View: 20, DB: 2) | 200 OK [http://0.0.0.0/shots/displayall]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#rss (for 127.0.0.1 at 2009-05-19 13:15:56) [GET]
+
+NameError (uninitialized constant MainController):
+  
+
+Rendered rescues/_trace (100.5ms)
+Rendered rescues/_request_and_response (2.2ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ShotsController#rss (for 127.0.0.1 at 2009-05-19 13:16:31) [GET]
+  [4;36;1mShot Load (0.0ms)[0m   [0;1mMysql::Error: Unknown column 'date_taken' in 'order clause': SELECT * FROM `shots` ORDER BY date_taken DESC LIMIT 10[0m
+
+ActiveRecord::StatementInvalid (Mysql::Error: Unknown column 'date_taken' in 'order clause': SELECT * FROM `shots`  ORDER BY date_taken DESC LIMIT 10):
+  app/controllers/shots_controller.rb:42:in `rss'
+
+Rendered rescues/_trace (56.2ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ShotsController#rss (for 127.0.0.1 at 2009-05-19 13:17:20) [GET]
+  [4;35;1mShot Load (0.0ms)[0m   [0mMysql::Error: Unknown column 'created_on' in 'order clause': SELECT * FROM `shots` ORDER BY created_on DESC LIMIT 10[0m
+
+ActiveRecord::StatementInvalid (Mysql::Error: Unknown column 'created_on' in 'order clause': SELECT * FROM `shots`  ORDER BY created_on DESC LIMIT 10):
+  app/controllers/shots_controller.rb:42:in `rss'
+
+Rendered rescues/_trace (133.5ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ShotsController#rss (for 127.0.0.1 at 2009-05-19 13:17:33) [GET]
+  [4;36;1mShot Load (0.5ms)[0m   [0;1mSELECT * FROM `shots` LIMIT 2[0m
+Rendering shots/rss
+  [4;35;1mShot Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `shots`[0m
+Completed in 23ms (View: 13, DB: 2) | 200 OK [http://localhost/rss.xml]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ShotsController#rss (for 127.0.0.1 at 2009-05-19 13:18:01) [GET]
+  [4;36;1mShot Load (0.1ms)[0m   [0;1mSELECT * FROM `shots` LIMIT 2[0m
+Rendering shots/rss
+  [4;35;1mShot Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `shots`[0m
+Completed in 37ms (View: 7, DB: 1) | 200 OK [http://localhost/rss.xml]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-19 13:19:16) [GET]
+
+ActionController::RoutingError (No route matches "/rss.html" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ShotsController#rss (for 127.0.0.1 at 2009-05-19 13:19:46) [GET]
+  [4;36;1mShot Load (0.2ms)[0m   [0;1mSELECT * FROM `shots` LIMIT 2[0m
+Rendering shots/rss
+  [4;35;1mShot Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `shots`[0m
+Completed in 17ms (View: 7, DB: 2) | 200 OK [http://localhost/rss.xml]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ShotsController#rss (for 127.0.0.1 at 2009-05-19 13:20:22) [GET]
+  [4;36;1mShot Load (0.1ms)[0m   [0;1mSELECT * FROM `shots` LIMIT 2[0m
+Rendering shots/rss
+  [4;35;1mShot Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `shots`[0m
+Completed in 15ms (View: 6, DB: 1) | 200 OK [http://localhost/rss.xml]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ShotsController#rss (for 127.0.0.1 at 2009-05-19 13:22:32) [GET]
+  [4;36;1mShot Load (0.2ms)[0m   [0;1mSELECT * FROM `shots` LIMIT 2[0m
+Rendering shots/rss
+  [4;35;1mShot Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `shots`[0m
+Completed in 21ms (View: 10, DB: 1) | 200 OK [http://localhost/rss.xml]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ShotsController#rss (for 127.0.0.1 at 2009-05-19 13:22:34) [GET]
+  [4;36;1mShot Load (0.1ms)[0m   [0;1mSELECT * FROM `shots` LIMIT 2[0m
+Rendering shots/rss
+  [4;35;1mShot Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `shots`[0m
+Completed in 15ms (View: 7, DB: 1) | 200 OK [http://localhost/rss.xml]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ShotsController#rss (for 127.0.0.1 at 2009-05-19 13:22:40) [GET]
+  [4;36;1mShot Load (0.1ms)[0m   [0;1mSELECT * FROM `shots` LIMIT 2[0m
+Rendering shots/rss
+  [4;35;1mShot Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `shots`[0m
+Completed in 20ms (View: 13, DB: 1) | 200 OK [http://localhost/rss.xml]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ShotsController#rss (for 127.0.0.1 at 2009-05-19 13:23:27) [GET]
+  [4;36;1mShot Load (0.2ms)[0m   [0;1mSELECT * FROM `shots` LIMIT 2[0m
+Rendering shots/rss
+  [4;35;1mShot Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `shots`[0m
+Completed in 106ms (View: 11, DB: 1) | 200 OK [http://localhost/rss.xml]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ShotsController#rss (for 127.0.0.1 at 2009-05-19 13:23:43) [GET]
+  [4;36;1mShot Load (0.1ms)[0m   [0;1mSELECT * FROM `shots` LIMIT 2[0m
+Rendering shots/rss
+  [4;35;1mShot Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `shots`[0m
+Completed in 21ms (View: 11, DB: 1) | 200 OK [http://localhost/rss.xml]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ShotsController#rss (for 127.0.0.1 at 2009-05-19 13:31:20) [GET]
+  [4;36;1mShot Load (0.2ms)[0m   [0;1mSELECT * FROM `shots` LIMIT 2[0m
+Rendering shots/rss
+  [4;35;1mShot Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `shots`[0m
+Completed in 18ms (View: 10, DB: 1) | 200 OK [http://localhost/rss.xml]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ShotsController#rss (for 127.0.0.1 at 2009-05-19 13:33:06) [GET]
+  [4;36;1mShot Load (0.2ms)[0m   [0;1mSELECT * FROM `shots` LIMIT 2[0m
+Rendering shots/rss
+  [4;35;1mShot Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `shots`[0m
+
+ActionView::TemplateError (undefined local variable or method `post' for #<ActionView::Base:0xb679bc90>) on line #12 of app/views/shots/rss.rxml:
+9:     for shot in @shots
+10:       xml.item do
+11:         xml.title(shot.tape_id)
+12:         xml.link(post.link )
+13:         xml.tape shot.tape_id
+14:         xml.campus shot.campus
+15:         xml.location shot.location
+
+    app/views/shots/rss.rxml:12:in `_run_rxml_app47views47shots47rss46rxml'
+    app/views/shots/rss.rxml:10:in `_run_rxml_app47views47shots47rss46rxml'
+    app/views/shots/rss.rxml:9:in `each'
+    app/views/shots/rss.rxml:9:in `_run_rxml_app47views47shots47rss46rxml'
+    app/views/shots/rss.rxml:3:in `_run_rxml_app47views47shots47rss46rxml'
+    app/views/shots/rss.rxml:2:in `_run_rxml_app47views47shots47rss46rxml'
+    app/controllers/shots_controller.rb:52:in `rss'
+
+Rendered rescues/_trace (69.2ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ShotsController#rss (for 127.0.0.1 at 2009-05-19 13:33:13) [GET]
+  [4;36;1mShot Load (0.2ms)[0m   [0;1mSELECT * FROM `shots` LIMIT 2[0m
+Rendering shots/rss
+  [4;35;1mShot Columns (5.0ms)[0m   [0mSHOW FIELDS FROM `shots`[0m
+
+ActionView::TemplateError (undefined method `link' for #<Shot:0xb6614cdc>) on line #12 of app/views/shots/rss.rxml:
+9:     for shot in @shots
+10:       xml.item do
+11:         xml.title(shot.tape_id)
+12:         xml.link(shot.link )
+13:         xml.tape shot.tape_id
+14:         xml.campus shot.campus
+15:         xml.location shot.location
+
+    app/views/shots/rss.rxml:12:in `_run_rxml_app47views47shots47rss46rxml'
+    app/views/shots/rss.rxml:10:in `_run_rxml_app47views47shots47rss46rxml'
+    app/views/shots/rss.rxml:9:in `each'
+    app/views/shots/rss.rxml:9:in `_run_rxml_app47views47shots47rss46rxml'
+    app/views/shots/rss.rxml:3:in `_run_rxml_app47views47shots47rss46rxml'
+    app/views/shots/rss.rxml:2:in `_run_rxml_app47views47shots47rss46rxml'
+    app/controllers/shots_controller.rb:52:in `rss'
+
+Rendered rescues/_trace (77.5ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ShotsController#rss (for 127.0.0.1 at 2009-05-19 13:34:02) [GET]
+  [4;36;1mShot Load (0.2ms)[0m   [0;1mSELECT * FROM `shots` LIMIT 2[0m
+Rendering shots/rss
+  [4;35;1mShot Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `shots`[0m
+Completed in 18ms (View: 9, DB: 2) | 200 OK [http://localhost/rss.xml]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ShotsController#rss (for 127.0.0.1 at 2009-05-19 13:35:30) [GET]
+  [4;36;1mShot Load (0.5ms)[0m   [0;1mSELECT * FROM `shots` LIMIT 5[0m
+Rendering shots/rss
+  [4;35;1mShot Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `shots`[0m
+Completed in 17ms (View: 8, DB: 2) | 200 OK [http://localhost/rss.xml]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ShotsController#displayall (for 127.0.0.1 at 2009-05-19 13:36:13) [GET]
+  [4;36;1mShot Load (0.2ms)[0m   [0;1mSELECT * FROM `shots` [0m
+Rendering template within layouts/shots
+Rendering shots/displayall
+  [4;35;1mShot Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `shots`[0m
+Rendered shots/_display (19.3ms)
+Completed in 31ms (View: 21, DB: 1) | 200 OK [http://0.0.0.0/shots/displayall]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ShotsController#index (for 127.0.0.1 at 2009-05-19 13:36:15) [GET]
+Rendering template within layouts/shots
+Rendering shots/index
+Completed in 7ms (View: 3, DB: 0) | 200 OK [http://0.0.0.0/v/shots]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ShotsController#new (for 127.0.0.1 at 2009-05-19 13:36:17) [GET]
+  [4;36;1mShot Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `shots`[0m
+  [4;35;1mUniversity Load (0.2ms)[0m   [0mSELECT * FROM `universities` [0m
+Rendering template within layouts/shots
+Rendering shots/new
+  [4;36;1mUniversity Columns (0.7ms)[0m   [0;1mSHOW FIELDS FROM `universities`[0m
+Completed in 114ms (View: 24, DB: 2) | 200 OK [http://0.0.0.0/v/shots/new]
